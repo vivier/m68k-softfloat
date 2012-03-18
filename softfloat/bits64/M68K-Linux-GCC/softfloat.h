@@ -47,8 +47,9 @@ typedef unsigned int float32;
 typedef unsigned long long float64;
 #ifdef FLOATX80
 typedef struct {
-    unsigned long long low;
     unsigned short high;
+    unsigned short dummy;
+    unsigned long long low;
 } floatx80;
 #endif
 #ifdef FLOAT128
